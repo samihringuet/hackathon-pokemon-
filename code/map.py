@@ -77,6 +77,7 @@ class Map:
         self.group.center(self.player.rect.center)
         self.group.draw(self.screen.get_display())
 
+
     def pose_player(self, switch: Switch):
         position = self.tmx_data.get_object_by_name("spawn " + self.current_map.name + " " + str(switch.port))
         self.player.position = pygame.math.Vector2(position.x, position.y)
