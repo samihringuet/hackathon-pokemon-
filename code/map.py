@@ -48,6 +48,7 @@ class Map:
                         int(obj.name.split(" ")[-1])
                     ))
 
+
         if self.player:
             self.pose_player(switch)
             self.player.align_hitbox()
