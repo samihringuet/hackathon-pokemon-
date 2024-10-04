@@ -68,6 +68,7 @@ class Map:
         self.player.add_switchs(self.switchs)
         self.player.add_collisions(self.collisions)
 
+
     def update(self) -> None:
         if self.player:
             if self.player.change_map and self.player.step >= 8:
